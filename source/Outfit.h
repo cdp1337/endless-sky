@@ -40,6 +40,9 @@ public:
 	// These are all the possible category strings for outfits.
 	static const std::vector<std::string> CATEGORIES;
 	
+	// Attribute names for various atts on outfits.
+	static const std::map<std::string, std::string> ATTRIBUTES;
+	
 public:
 	// An "outfit" can be loaded from an "outfit" node or from a ship's
 	// "attributes" node.

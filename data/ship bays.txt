@@ -1,0 +1,99 @@
+outfit "Standard Ship Armory"
+	plural "Standard Ship Armories"
+	category "Ship Bays"
+	thumbnail "outfit/armory"
+	cost 480000
+	mass 44
+	bays -1
+	"armory capacity" 120
+	unplunderable 1
+	description "For the captains who make their money by boarding, this section of the ship allows you to use more advanced and stronger boarding weapons."
+
+outfit "Oversized Ship Armory"
+	plural "Standard Ship Armories"
+	category "Ship Bays"
+	thumbnail "outfit/armory"
+	cost 1000000
+	mass 88
+	bays -2
+	"armory capacity" 240
+	unplunderable 1
+	description "For the captains who make their money by boarding, this section of the ship allows you to use more advanced and stronger boarding weapons."
+
+outfit "Standard Cargo Hold"
+	plural "Standard Cargo Holds"
+	category "Ship Bays"
+	thumbnail "outfit/cargo hold"
+	cost 150000
+	mass 30
+	bays -1
+	"cargo space" 130
+	unplunderable 1
+	description "Standard cargo holds are the stable for medium and large scale transport operations."
+
+outfit "Standard Engineering Bay"
+	plural "Standard Engineering Bays"
+	category "Ship Bays"
+	thumbnail "outfit/engineering bay"
+	cost 250000
+	mass 45
+	bays -1
+	"outfit space" 100
+	unplunderable 1
+	description "Small engineering bay, can hold engineering equipment."
+
+outfit "Standard Passenger Quarters"
+	plural "Standard Passenger Quarters"
+	category "Ship Bays"
+	thumbnail "outfit/passenger quarters"
+	cost 600000
+	mass 120
+	bays -1
+	"bunks" 25
+	unplunderable 1
+	description "A dedicated passenger quarters, for when your guests are not so keen on bunking beside the engine core."
+
+outfit "Small Cargo Hold"
+	plural "Small Cargo Holds"
+	category "Ship Bays"
+	thumbnail "outfit/small cargo hold"
+	cost 15000
+	mass 4
+	minibays -1
+	"cargo space" 25
+	unplunderable 1
+	description "Small cargo hold, suitable for a little bit of cargo."
+
+outfit "Small Engineering Bay"
+	plural "Small Engineering Bays"
+	category "Ship Bays"
+	thumbnail "outfit/small engineering bay"
+	cost 25000
+	mass 10
+	minibays -1
+	"outfit space" 30
+	unplunderable 1
+	description "Small engineering bay, can hold engineering equipment."
+
+outfit "Small Dual-Purpose Bay"
+	plural "Small Dual-Purpose Bays"
+	category "Ship Bays"
+	thumbnail "outfit/small dualpurpose bay"
+	cost 30000
+	mass 8
+	minibays -1
+	"outfit space" 12
+	"cargo space" 10
+	unplunderable 1
+	description "General purpose small bay, not great at holding cargo nor housing equipment, but can do both."
+
+outfit "Small Passenger Quarters"
+	plural "Small Passenger Quarters"
+	category "Ship Bays"
+	thumbnail "outfit/small passenger quarters"
+	cost 60000
+	mass 20
+	minibays -1
+	"bunks" 6
+	unplunderable 1
+	description "A dedicated passenger quarters, for when your guests are not so keen on bunking beside the engine core."

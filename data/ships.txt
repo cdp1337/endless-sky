@@ -179,10 +179,11 @@ ship "Bactrian"
 		"drag" 16.1
 		"heat dissipation" .4
 		"fuel capacity" 700
-		"cargo space" 530
+		"cargo space" 0
 		"outfit space" 740
 		"weapon capacity" 300
 		"engine capacity" 180
+		bays 4
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
@@ -201,6 +202,7 @@ ship "Bactrian"
 		"D94-YV Shield Generator"
 		"Large Radar Jammer"
 		"Ramscoop"
+		"Standard Cargo Hold" 4
 		
 		"X4700 Ion Thruster"
 		"X5200 Ion Steering"
@@ -305,7 +307,6 @@ ship "Barb" "Barb (Proton)"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description `The Barb's commercial success spurred demand for a variant equipped with a Proton Gun. Syndicated Systems had to remove the turret mounting hardware to fit the powerful cannon, but the result is a level of short-range firepower that is unheard-of for a craft its size.`
-
 
 
 ship "Bastion"
@@ -603,10 +604,11 @@ ship "Bulk Freighter"
 		"drag" 15.8
 		"heat dissipation" .5
 		"fuel capacity" 600
-		"cargo space" 600
+		"cargo space" 0
 		"outfit space" 410
 		"weapon capacity" 180
 		"engine capacity" 85
+		minibays 32
 		weapon
 			"blast radius" 120
 			"shield damage" 1200
@@ -617,7 +619,7 @@ ship "Bulk Freighter"
 		"Sidewinder Missile" 100
 		"Laser Turret" 3
 		"Heavy Anti-Missile Turret" 2
-		
+
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
 		"D23-QP Shield Generator"
@@ -625,6 +627,9 @@ ship "Bulk Freighter"
 		"X3700 Ion Thruster"
 		"X3200 Ion Steering"
 		"Scram Drive"
+
+		"Small Engineering Bay" 2
+		"Small Cargo Hold" 30
 		
 	engine -22 198
 	engine 22 198
@@ -1292,10 +1297,11 @@ ship "Freighter"
 		"drag" 5.6
 		"heat dissipation" .6
 		"fuel capacity" 600
-		"cargo space" 150
+		"cargo space" 0
 		"outfit space" 250
 		"weapon capacity" 80
 		"engine capacity" 70
+		minibays 8
 		weapon
 			"blast radius" 40
 			"shield damage" 400
@@ -1312,6 +1318,8 @@ ship "Freighter"
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"
 		"Scram Drive"
+		"Small Engineering Bay" 2
+		"Small Cargo Hold" 6
 		
 	engine -9 97
 	engine 9 97
@@ -1493,10 +1501,11 @@ ship "Hauler"
 		"drag" 10.5
 		"heat dissipation" .6
 		"fuel capacity" 400
-		"cargo space" 130
+		"cargo space" 0
 		"outfit space" 350
 		"weapon capacity" 140
 		"engine capacity" 80
+		bays 1
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -1512,7 +1521,7 @@ ship "Hauler"
 		"LP072a Battery Pack"
 		"D23-QP Shield Generator"
 		"Small Radar Jammer"
-		
+		"Standard Cargo Hold"
 		"Greyhound Plasma Thruster"
 		"Impala Plasma Steering"
 		"Hyperdrive"
@@ -1547,10 +1556,11 @@ ship "Hauler II"
 		"drag" 11.5
 		"heat dissipation" .6
 		"fuel capacity" 400
-		"cargo space" 260
+		"cargo space" 0
 		"outfit space" 350
 		"weapon capacity" 140
 		"engine capacity" 80
+		bays 2
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -1566,7 +1576,7 @@ ship "Hauler II"
 		"LP072a Battery Pack"
 		"D23-QP Shield Generator"
 		"Small Radar Jammer"
-		
+		"Standard Cargo Hold" 2
 		"Greyhound Plasma Thruster"
 		"Impala Plasma Steering"
 		"Hyperdrive"
@@ -1601,10 +1611,11 @@ ship "Hauler III"
 		"drag" 12.5
 		"heat dissipation" .6
 		"fuel capacity" 400
-		"cargo space" 390
+		"cargo space" 0
 		"outfit space" 350
 		"weapon capacity" 140
 		"engine capacity" 80
+		bays 3
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -1620,7 +1631,7 @@ ship "Hauler III"
 		"LP072a Battery Pack"
 		"D23-QP Shield Generator"
 		"Small Radar Jammer"
-		
+		"Standard Cargo Hold" 3
 		"Greyhound Plasma Thruster"
 		"Impala Plasma Steering"
 		"Hyperdrive"
@@ -1746,10 +1757,11 @@ ship "Heavy Shuttle"
 		"drag" 2.1
 		"heat dissipation" .8
 		"fuel capacity" 500
-		"cargo space" 35
+		"cargo space" 0
 		"outfit space" 120
 		"weapon capacity" 10
 		"engine capacity" 60
+		minibays 1
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -1763,6 +1775,7 @@ ship "Heavy Shuttle"
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"
 		"Hyperdrive"
+		"Small Cargo Hold"
 		
 	engine 6 30
 	engine -6 30
@@ -1985,10 +1998,11 @@ ship "Mule"
 		"drag" 5.7
 		"heat dissipation" .5
 		"fuel capacity" 600
-		"cargo space" 270
+		"cargo space" 0
 		"outfit space" 450
 		"weapon capacity" 210
 		"engine capacity" 110
+		bays 3
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -2006,6 +2020,7 @@ ship "Mule"
 		"Small Radar Jammer" 2
 		"Ramscoop"
 		
+		"Standard Cargo Hold" 3
 		"X3700 Ion Thruster"
 		"X3200 Ion Steering"
 		"Hyperdrive"
@@ -2461,10 +2476,11 @@ ship "Shuttle"
 		"drag" 1.7
 		"heat dissipation" .8
 		"fuel capacity" 400
-		"cargo space" 20
+		"cargo space" 0
 		"outfit space" 120
 		"weapon capacity" 10
 		"engine capacity" 60
+		"minibays" 1
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -2474,6 +2490,7 @@ ship "Shuttle"
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
 		"D14-RN Shield Generator"
+		"Small Dual-Purpose Bay"
 		
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"
@@ -2660,10 +2677,11 @@ ship "Star Barge"
 		"drag" 2.4
 		"heat dissipation" .8
 		"fuel capacity" 300
-		"cargo space" 50
+		"cargo space" 0
 		"outfit space" 130
 		"weapon capacity" 20
 		"engine capacity" 40
+		"minibays" 2
 		weapon
 			"blast radius" 16
 			"shield damage" 160
@@ -2677,6 +2695,7 @@ ship "Star Barge"
 		"Chipmunk Plasma Thruster"
 		"Chipmunk Plasma Steering"
 		"Hyperdrive"
+		"Small Cargo Hold" 2
 		
 	engine -9 38
 	engine 9 38

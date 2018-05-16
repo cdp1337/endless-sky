@@ -34,8 +34,22 @@ const vector<string> Outfit::CATEGORIES = {
 	"Systems",
 	"Power",
 	"Engines",
+	"Ship Bays",
 	"Hand to Hand",
 	"Special"
+};
+
+// Provide a lookup map of attribute names to a human-friendly version to display in the outfitter.
+const map<string, string> Outfit::ATTRIBUTES = {
+	{ "armory space", "Armory Space" },
+	{ "bays", "Chassis Bays (large)" },
+	{ "cargo space", "Cargo Space" },
+	{ "engine capacity", "Engine Space" },
+	{ "gun ports", "Gun Ports" },
+	{ "outfit space", "Outfit Space" },
+	{ "minibays", "Chassis Bays (small)" },
+	{ "turret mounts", "Turrets" },
+	{ "weapon capacity", "Weapon Space" }
 };
 
 

@@ -24,6 +24,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include <algorithm>
 #include <map>
 #include <sstream>
+#include <iostream>
 
 using namespace std;
 
@@ -120,11 +121,38 @@ void ShipInfoDisplay::UpdateAttributes(const Ship &ship, const Depreciation &dep
 	attributesHeight = 20;
 	
 	const Outfit &attributes = ship.Attributes();
+	const map<const Outfit *, int> &outfits = ship.Outfits();
+	
+	// Load all the attributes and their values along with the base values of this ship.
+	// This won't be correct some such as hyperdrive or unplunderable, but those special cases will be ignored.
+	map<string, double> attributeMapBase;
+	map<string, double> attributeMapUsed;
+	
+	for(auto const &a : ship.BaseAttributes().Attributes()) {
+		attributeMapBase[a.first] = a.second;
+	}
+	
+	for(auto const &a : attributes.Attributes()) {
+		attributeMapUsed[a.first] = a.second;
+	}
+	
+	// Use the outfit to adjust the base correctly; it's needed for outfits that increase max capacity.
+	for(const auto &o : outfits) {
+		for(auto const &a : o.first->Attributes()) {
+			double attval = o.first->Get(a.first);
+			
+			if(attval > 0) {
+				attributeMapBase[a.first] += (o.second * attval);
+			}
+		}
+	}
+	
 	
 	int64_t fullCost = ship.Cost();
 	int64_t depreciated = depreciation.Value(ship, day);
-	if(depreciated == fullCost)
+	if(depreciated == fullCost) {
 		attributeLabels.push_back("cost:");
+	}
 	else
 	{
 		ostringstream out;
@@ -137,30 +165,39 @@ void ShipInfoDisplay::UpdateAttributes(const Ship &ship, const Depreciation &dep
 	attributeLabels.push_back(string());
 	attributeValues.push_back(string());
 	attributesHeight += 10;
-	if(attributes.Get("shield generation"))
-	{
-		attributeLabels.push_back("shields charge / max:");
-		attributeValues.push_back(Format::Number(60. * attributes.Get("shield generation"))
-			+ " / " + Format::Number(attributes.Get("shields")));
+	
+	attributeLabels.push_back("Shields:");
+	if(attributeMapBase["shield generation"]) {
+		attributeValues.push_back(
+			Format::Number(attributeMapBase["shields"])
+			+ " ( "
+			+ Format::Number(60. * attributeMapBase["shield generation"])
+			+ " )"
+		);
 	}
 	else
 	{
-		attributeLabels.push_back("shields:");
-		attributeValues.push_back(Format::Number(attributes.Get("shields")));
+		attributeValues.push_back(Format::Number(attributeMapBase["shields"]));
 	}
 	attributesHeight += 20;
-	if(attributes.Get("hull repair rate"))
-	{
-		attributeLabels.push_back("hull repair / max:");
-		attributeValues.push_back(Format::Number(60. * attributes.Get("hull repair rate"))
-			+ " / " + Format::Number(attributes.Get("hull")));
+	
+	
+	attributeLabels.push_back("Hull:");
+	if(attributeMapBase["hull repair rate"]) {
+		attributeValues.push_back(
+			Format::Number(attributeMapBase["hull"])
+			+ " ( "
+			+ Format::Number(60. * attributeMapBase["hull repair rate"])
+			+ " )"
+		);
 	}
 	else
 	{
-		attributeLabels.push_back("hull:");
-		attributeValues.push_back(Format::Number(attributes.Get("hull")));
+		attributeValues.push_back(Format::Number(attributeMapBase["hull"]));
 	}
 	attributesHeight += 20;
+	
+	
 	double emptyMass = ship.Mass();
 	attributeLabels.push_back(isGeneric ? "mass with no cargo:" : "mass:");
 	attributeValues.push_back(Format::Number(emptyMass));
@@ -214,30 +251,37 @@ void ShipInfoDisplay::UpdateAttributes(const Ship &ship, const Depreciation &dep
 			+ " / " + Format::Number(60. * attributes.Get("turn") / emptyMass));
 	attributesHeight += 20;
 	
-	// Find out how much outfit, engine, and weapon space the chassis has.
-	map<string, double> chassis;
-	static const vector<string> NAMES = {
-		"outfit space free:", "outfit space",
-		"    weapon capacity:", "weapon capacity",
-		"    engine capacity:", "engine capacity",
-		"gun ports free:", "gun ports",
-		"turret mounts free:", "turret mounts"
-	};
-	for(unsigned i = 1; i < NAMES.size(); i += 2)
-		chassis[NAMES[i]] = attributes.Get(NAMES[i]);
-	for(const auto &it : ship.Outfits())
-		for(auto &cit : chassis)
-			cit.second -= it.second * it.first->Get(cit.first);
 	
+	// Print a spacer between the previous section and this one.
 	attributeLabels.push_back(string());
 	attributeValues.push_back(string());
 	attributesHeight += 10;
-	for(unsigned i = 0; i < NAMES.size(); i += 2)
+	
+	
+	// Listing of labels to key names to calculate from.
+	const vector<string> atts = {
+		"minibays",
+		"bays",
+		"outfit space",
+		"armory space",
+		"weapon capacity",
+		"engine capacity",
+		"gun ports",
+		"turret mounts"
+	};
+	
+	for(unsigned i = 0; i < atts.size(); i ++)
 	{
-		attributeLabels.push_back(NAMES[i]);
-		attributeValues.push_back(Format::Number(attributes.Get(NAMES[i + 1]))
-			+ " / " + Format::Number(chassis[NAMES[i + 1]]));
-		attributesHeight += 20;
+		if(attributeMapBase[ atts[i] ] > 0) {
+			// Only draw this attribute if the total available is > 0.  I don't care about turret slots on a shuttle!
+			attributeLabels.push_back( Outfit::ATTRIBUTES.at(atts[i]) + ":" );
+			attributeValues.push_back(
+				Format::Number(attributeMapUsed[ atts[i] ])
+				+ " / " 
+				+ Format::Number(attributeMapBase[ atts[i] ])
+			);
+			attributesHeight += 20;
+		}
 	}
 	
 	if(ship.BaysFree(false))

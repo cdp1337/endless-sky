@@ -178,8 +178,6 @@ outfitter "Wanderer Advanced"
 	"Wanderer Ramscoop"
 	"Cargo Expansion"
 	"Outfits Expansion"
-	"Small Bunk Room"
-	"Bunk Room"
 	"Local Map"
 	"Hyperdrive"
 

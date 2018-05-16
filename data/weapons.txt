@@ -626,7 +626,8 @@ outfit "Meteor Missile Box"
 	cost 9000
 	thumbnail "outfit/meteor storage"
 	"mass" 1.4
-	"outfit space" -5
+	"outfit space" 0
+	"armory capacity" -15
 	"meteor capacity" 18
 	ammo "Meteor Missile"
 	description "The Meteor Missile Box is used to store extra ammunition for Meteor Missile Launchers."
@@ -688,7 +689,8 @@ outfit "Sidewinder Missile Rack"
 	cost 20000
 	thumbnail "outfit/sidewinder storage"
 	"mass" 2
-	"outfit space" -7
+	"outfit space" 0
+	"armory capacity" -21
 	"sidewinder capacity" 25
 	ammo "Sidewinder Missile"
 	description "The Sidewinder Missile Rack is used to store extra ammunition for Sidewinder Missile Launchers."
@@ -751,7 +753,8 @@ outfit "Javelin Storage Crate"
 	cost 5000
 	thumbnail "outfit/javelin storage"
 	"mass" 2
-	"outfit space" -6
+	"outfit space" 0
+	"armory capacity" -18
 	"javelin capacity" 100
 	ammo "Javelin"
 	description "The Javelin Storage Crate is used to store extra ammunition for Javelin Pods."
@@ -798,7 +801,8 @@ outfit "Torpedo Storage Rack"
 	cost 21000
 	thumbnail "outfit/torpedo storage"
 	"mass" 3
-	"outfit space" -9
+	"outfit space" 0
+	"armory capacity" -27
 	"torpedo capacity" 15
 	ammo "Torpedo"
 	description "The Torpedo Storage Rack is used to store extra ammunition for Torpedo Launchers."
@@ -860,7 +864,8 @@ outfit "Typhoon Storage Tube"
 	cost 40500
 	thumbnail "outfit/typhoon storage"
 	"mass" 2.5
-	"outfit space" -10
+	"outfit space" 0
+	"armory capacity" -30
 	"typhoon capacity" 15
 	ammo "Typhoon Torpedo"
 	description "The Typhoon Storage Tube is used to store extra ammunition for Typhoon Launchers."
@@ -921,7 +926,8 @@ outfit "Heavy Rocket Rack"
 	cost 20000
 	thumbnail "outfit/rocket storage"
 	"mass" 2
-	"outfit space" -7
+	"outfit space" 0
+	"armory capacity" -21
 	"rocket capacity" 10
 	ammo "Heavy Rocket"
 	description "The Heavy Rocket Rack is used to store extra ammunition for Heavy Rocket Launchers."
@@ -1060,7 +1066,8 @@ outfit "Bullet Boxes"
 	cost 3000
 	thumbnail "outfit/bullet storage"
 	"mass" 2
-	"outfit space" -5
+	"outfit space" 0
+	"armory capacity" -15
 	"gatling round capacity" 1500
 	ammo "Gatling Gun Ammo"
 	description "Bullet Boxes are used to store extra ammunition for Gatling Guns."

@@ -118,12 +118,12 @@ void OutfitInfoDisplay::UpdateRequirements(const Outfit &outfit, const PlayerInf
 	int64_t buyValue = player.StockDepreciation().Value(&outfit, day);
 	int64_t sellValue = player.FleetDepreciation().Value(&outfit, day);
 	
-	if(buyValue == cost)
-		requirementLabels.push_back("cost:");
-	else
-	{
+	if(buyValue == cost) {
+		requirementLabels.push_back("Costs:");
+	}
+	else {
 		ostringstream out;
-		out << "cost (" << (100 * buyValue) / cost << "%):";
+		out << "Costs (" << (100 * buyValue) / cost << "%):";
 		requirementLabels.push_back(out.str());
 	}
 	requirementValues.push_back(Format::Number(buyValue));
@@ -132,11 +132,11 @@ void OutfitInfoDisplay::UpdateRequirements(const Outfit &outfit, const PlayerInf
 	if(canSell && sellValue != buyValue)
 	{
 		if(sellValue == cost)
-			requirementLabels.push_back("sells for:");
+			requirementLabels.push_back("Sells For:");
 		else
 		{
 			ostringstream out;
-			out << "sells for (" << (100 * sellValue) / cost << "%):";
+			out << "Sells For (" << (100 * sellValue) / cost << "%):";
 			requirementLabels.push_back(out.str());
 		}
 		requirementValues.push_back(Format::Number(sellValue));
@@ -145,36 +145,38 @@ void OutfitInfoDisplay::UpdateRequirements(const Outfit &outfit, const PlayerInf
 	
 	if(outfit.Mass())
 	{
-		requirementLabels.emplace_back("mass:");
+		requirementLabels.emplace_back("Weight:");
 		requirementValues.emplace_back(Format::Number(outfit.Mass()));
 		requirementsHeight += 20;
 	}
 	
-	bool hasContent = true;
-	static const vector<string> NAMES = {
-		"", "",
-		"outfit space needed:", "outfit space",
-		"weapon capacity needed:", "weapon capacity",
-		"engine capacity needed:", "engine capacity",
-		"", "",
-		"gun ports needed:", "gun ports",
-		"turret mounts needed:", "turret mounts"
+	const vector<string> atts = {
+		"minibays",
+		"bays",
+		"cargo space",
+		"outfit space",
+		"armory space",
+		"weapon capacity",
+		"engine capacity",
+		"gun ports",
+		"turret mounts"
 	};
-	for(unsigned i = 0; i + 1 < NAMES.size(); i += 2)
-	{
-		if(NAMES[i].empty() && hasContent)
-		{
-			requirementLabels.emplace_back();
-			requirementValues.emplace_back();
-			requirementsHeight += 10;
-			hasContent = false;
-		}
-		else if(outfit.Get(NAMES[i + 1]))
-		{
-			requirementLabels.push_back(NAMES[i]);
-			requirementValues.push_back(Format::Number(-outfit.Get(NAMES[i + 1])));
+	
+	for(unsigned i = 0; i + 1 < atts.size(); i ++) {
+		double attval = outfit.Get( atts[i] );
+		
+		if(attval > 0 ) {
+			// This outfit provides this attribute and is greater than 0!
+			// This means that it provides it rather than requiring it.
+			requirementLabels.push_back( "Provides " + Outfit::ATTRIBUTES.at(atts[i]) + ":" );
+			requirementValues.push_back(Format::Number(attval));
 			requirementsHeight += 20;
-			hasContent = true;
+		}
+		else if(attval < 0) {
+			// This outfit requires this attribute, as it's less than 0.
+			requirementLabels.push_back( "Requires " + Outfit::ATTRIBUTES.at(atts[i]) + ":" );
+			requirementValues.push_back(Format::Number(-attval));
+			requirementsHeight += 20;
 		}
 	}
 }
@@ -191,7 +193,7 @@ void OutfitInfoDisplay::UpdateAttributes(const Outfit &outfit)
 	for(const pair<const char *, double> &it : outfit.Attributes())
 	{
 		static const set<string> SKIP = {
-			"outfit space", "weapon capacity", "engine capacity", "gun ports", "turret mounts"
+			"bays", "minibays", "cargo space", "armory space", "outfit space", "weapon capacity", "engine capacity", "gun ports", "turret mounts"
 		};
 		if(SKIP.count(it.first))
 			continue;
