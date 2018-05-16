@@ -13,7 +13,7 @@ outfit "Energy Blaster"
 	cost 16000
 	thumbnail "outfit/blaster"
 	"mass" 5
-	"outfit space" -5
+	"outfit space" 0
 	"weapon capacity" -5
 	"gun ports" -1
 	weapon
@@ -35,7 +35,7 @@ outfit "Blaster Turret"
 	cost 100000
 	thumbnail "outfit/blaster turret"
 	"mass" 15
-	"outfit space" -15
+	"outfit space" 0
 	"weapon capacity" -15
 	"turret mounts" -1
 	"required crew" 1
@@ -61,7 +61,7 @@ outfit "Quad Blaster Turret"
 	cost 230000
 	thumbnail "outfit/quad blaster turret"
 	"mass" 25
-	"outfit space" -25
+	"outfit space" 0
 	"weapon capacity" -25
 	"turret mounts" -1
 	"required crew" 1
@@ -96,7 +96,7 @@ outfit "Modified Blaster"
 	cost 35000
 	thumbnail "outfit/mod blaster"
 	"mass" 6
-	"outfit space" -6
+	"outfit space" 0
 	"weapon capacity" -6
 	"gun ports" -1
 	weapon
@@ -118,7 +118,7 @@ outfit "Modified Blaster Turret"
 	cost 170000
 	thumbnail "outfit/mod blaster turret"
 	"mass" 18
-	"outfit space" -18
+	"outfit space" 0
 	"weapon capacity" -18
 	"turret mounts" -1
 	"required crew" 1
@@ -145,7 +145,7 @@ outfit "Beam Laser"
 	cost 29000
 	thumbnail "outfit/laser"
 	"mass" 8
-	"outfit space" -8
+	"outfit space" 0
 	"weapon capacity" -8
 	"gun ports" -1
 	weapon
@@ -168,7 +168,7 @@ outfit "Laser Turret"
 	cost 140000
 	thumbnail "outfit/laser turret"
 	"mass" 22
-	"outfit space" -22
+	"outfit space" 0
 	"weapon capacity" -22
 	"turret mounts" -1
 	"required crew" 1
@@ -205,7 +205,7 @@ outfit "Heavy Laser"
 	cost 60000
 	thumbnail "outfit/heavy laser"
 	"mass" 15
-	"outfit space" -15
+	"outfit space" 0
 	"weapon capacity" -15
 	"gun ports" -1
 	weapon
@@ -228,7 +228,7 @@ outfit "Heavy Laser Turret"
 	cost 320000
 	thumbnail "outfit/heavy laser turret"
 	"mass" 40
-	"outfit space" -40
+	"outfit space" 0
 	"weapon capacity" -40
 	"turret mounts" -1
 	"required crew" 1
@@ -266,7 +266,7 @@ outfit "Electron Beam"
 	cost 170000
 	thumbnail "outfit/electron beam"
 	"mass" 21
-	"outfit space" -21
+	"outfit space" 0
 	"weapon capacity" -21
 	"gun ports" -1
 	weapon
@@ -289,7 +289,7 @@ outfit "Electron Turret"
 	cost 720000
 	thumbnail "outfit/electron turret"
 	"mass" 54
-	"outfit space" -54
+	"outfit space" 0
 	"weapon capacity" -54
 	"turret mounts" -1
 	"required crew" 1
@@ -326,7 +326,7 @@ outfit "Anti-Missile Turret"
 	cost 60000
 	thumbnail "outfit/anti-missile"
 	"mass" 16
-	"outfit space" -16
+	"outfit space" 0
 	"weapon capacity" -16
 	"turret mounts" -1
 	weapon
@@ -355,7 +355,7 @@ outfit "Heavy Anti-Missile Turret"
 	cost 150000
 	thumbnail "outfit/heavy anti-missile"
 	"mass" 30
-	"outfit space" -30
+	"outfit space" 0
 	"weapon capacity" -30
 	"turret mounts" -1
 	weapon
@@ -384,7 +384,7 @@ outfit "Particle Cannon"
 	cost 220000
 	thumbnail "outfit/particle cannon"
 	"mass" 30
-	"outfit space" -30
+	"outfit space" 0
 	"weapon capacity" -30
 	"gun ports" -1
 	weapon
@@ -419,7 +419,7 @@ outfit "Proton Gun"
 	cost 150000
 	thumbnail "outfit/proton gun"
 	"mass" 28
-	"outfit space" -28
+	"outfit space" 0
 	"weapon capacity" -28
 	"gun ports" -1
 	weapon
@@ -462,7 +462,7 @@ outfit "Proton Turret"
 	cost 260000
 	thumbnail "outfit/proton turret"
 	"mass" 34
-	"outfit space" -34
+	"outfit space" 0
 	"weapon capacity" -34
 	"turret mounts" -1
 	"required crew" 1
@@ -489,7 +489,7 @@ outfit "Plasma Cannon"
 	cost 190000
 	thumbnail "outfit/plasma cannon"
 	"mass" 25
-	"outfit space" -25
+	"outfit space" 0
 	"weapon capacity" -25
 	"gun ports" -1
 	weapon
@@ -514,7 +514,7 @@ outfit "Plasma Turret"
 	cost 520000
 	thumbnail "outfit/plasma turret"
 	"mass" 60
-	"outfit space" -60
+	"outfit space" 0
 	"weapon capacity" -60
 	"turret mounts" -1
 	"required crew" 1
@@ -555,7 +555,7 @@ outfit "Flamethrower"
 	cost 190000
 	thumbnail "outfit/flamethrower"
 	"mass" 9
-	"outfit space" -9
+	"outfit space" 0
 	"weapon capacity" -9
 	"gun ports" -1
 	weapon
@@ -637,7 +637,7 @@ outfit "Meteor Missile Launcher"
 	cost 15000
 	thumbnail "outfit/meteor launcher"
 	"mass" 3
-	"outfit space" -10
+	"outfit space" 0
 	"weapon capacity" -10
 	"gun ports" -1
 	"meteor capacity" 35
@@ -700,7 +700,7 @@ outfit "Sidewinder Missile Launcher"
 	cost 60000
 	thumbnail "outfit/sidewinder launcher"
 	"mass" 4
-	"outfit space" -14
+	"outfit space" 0
 	"weapon capacity" -14
 	"gun ports" -1
 	"sidewinder capacity" 50
@@ -764,7 +764,7 @@ outfit "Javelin Pod"
 	cost 20000
 	thumbnail "outfit/javelin pod"
 	"mass" 4
-	"outfit space" -12
+	"outfit space" 0
 	"weapon capacity" -12
 	"gun ports" -1
 	"javelin capacity" 200
@@ -812,7 +812,7 @@ outfit "Torpedo Launcher"
 	cost 80000
 	thumbnail "outfit/torpedo launcher"
 	"mass" 13
-	"outfit space" -25
+	"outfit space" 0
 	"weapon capacity" -25
 	"gun ports" -1
 	"torpedo capacity" 30
@@ -937,7 +937,7 @@ outfit "Heavy Rocket Launcher"
 	cost 40000
 	thumbnail "outfit/rocket launcher"
 	"mass" 10
-	"outfit space" -20
+	"outfit space" 0
 	"weapon capacity" -20
 	"gun ports" -1
 	"rocket capacity" 20
@@ -983,7 +983,7 @@ outfit "Nuclear Missile"
 	cost 1000000
 	thumbnail "outfit/nuke"
 	"mass" 10
-	"outfit space" -10
+	"outfit space" 0
 	"weapon capacity" -10
 	"gun ports" -1
 	weapon
@@ -1077,7 +1077,7 @@ outfit "Gatling Gun"
 	cost 20000
 	thumbnail "outfit/gat"
 	"mass" 2
-	"outfit space" -8
+	"outfit space" 0
 	"weapon capacity" -8
 	"gun ports" -1
 	"gatling round capacity" 3000

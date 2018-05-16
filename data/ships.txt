@@ -22,7 +22,7 @@ ship "Aerie"
 		"heat dissipation" .7
 		"fuel capacity" 500
 		"cargo space" 50
-		"outfit space" 390
+		"outfit space" 145
 		"weapon capacity" 150
 		"engine capacity" 95
 		weapon
@@ -77,7 +77,7 @@ ship "Argosy"
 		"heat dissipation" .7
 		"fuel capacity" 400
 		"cargo space" 120
-		"outfit space" 270
+		"outfit space" 100
 		"weapon capacity" 90
 		"engine capacity" 80
 		weapon
@@ -131,7 +131,7 @@ ship "Arrow"
 		"heat dissipation" .85
 		"fuel capacity" 400
 		"cargo space" 10
-		"outfit space" 180
+		"outfit space" 70
 		"weapon capacity" 50
 		"engine capacity" 60
 		weapon
@@ -180,7 +180,7 @@ ship "Bactrian"
 		"heat dissipation" .4
 		"fuel capacity" 700
 		"cargo space" 0
-		"outfit space" 740
+		"outfit space" 260
 		"weapon capacity" 300
 		"engine capacity" 180
 		bays 4
@@ -244,7 +244,7 @@ ship "Barb"
 		"mass" 20
 		"drag" .8
 		"heat dissipation" .78
-		"outfit space" 85
+		"outfit space" 39
 		"weapon capacity" 24
 		"engine capacity" 22
 		weapon
@@ -284,7 +284,7 @@ ship "Barb" "Barb (Proton)"
 		"mass" 20
 		"drag" .8
 		"heat dissipation" .78
-		"outfit space" 85
+		"outfit space" 35
 		"weapon capacity" 28
 		"engine capacity" 22
 		weapon
@@ -323,7 +323,7 @@ ship "Bastion"
 		"heat dissipation" .5
 		"fuel capacity" 500
 		"cargo space" 110
-		"outfit space" 470
+		"outfit space" 170
 		"weapon capacity" 180
 		"engine capacity" 120
 		weapon
@@ -379,7 +379,7 @@ ship "Behemoth"
 		"heat dissipation" .4
 		"fuel capacity" 600
 		"cargo space" 490
-		"outfit space" 510
+		"outfit space" 140
 		"weapon capacity" 280
 		"engine capacity" 90
 		weapon
@@ -433,7 +433,7 @@ ship "Berserker"
 		"heat dissipation" .85
 		"fuel capacity" 400
 		"cargo space" 10
-		"outfit space" 200
+		"outfit space" 100
 		"weapon capacity" 35
 		"engine capacity" 65
 		weapon
@@ -479,7 +479,7 @@ ship "Blackbird"
 		"heat dissipation" .7
 		"fuel capacity" 700
 		"cargo space" 60
-		"outfit space" 350
+		"outfit space" 150
 		"weapon capacity" 90
 		"engine capacity" 110
 		weapon
@@ -526,7 +526,7 @@ ship "Bounder"
 		"heat dissipation" .8
 		"fuel capacity" 900
 		"cargo space" 40
-		"outfit space" 220
+		"outfit space" 60
 		"weapon capacity" 50
 		"engine capacity" 110
 		weapon
@@ -569,7 +569,7 @@ ship "Boxwing"
 		"mass" 45
 		"drag" .59
 		"heat dissipation" .27
-		"outfit space" 45
+		"outfit space" 17
 		"engine capacity" 28
 		"cargo space" 80
 		weapon
@@ -605,7 +605,7 @@ ship "Bulk Freighter"
 		"heat dissipation" .5
 		"fuel capacity" 600
 		"cargo space" 0
-		"outfit space" 410
+		"outfit space" 140
 		"weapon capacity" 180
 		"engine capacity" 85
 		minibays 32
@@ -666,7 +666,7 @@ ship "Carrier"
 		"heat dissipation" .45
 		"fuel capacity" 700
 		"cargo space" 100
-		"outfit space" 820
+		"outfit space" 240
 		"weapon capacity" 370
 		"engine capacity" 210
 		weapon
@@ -739,7 +739,7 @@ ship "Class C Freighter"
 		"heat dissipation" .5
 		"fuel capacity" 600
 		"cargo space" 20
-		"outfit space" 400
+		"outfit space" 175
 		"weapon capacity" 140
 		"engine capacity" 85
 		weapon
@@ -800,7 +800,7 @@ ship "Clipper"
 		"heat dissipation" .8
 		"fuel capacity" 500
 		"cargo space" 70
-		"outfit space" 260
+		"outfit space" 120
 		"weapon capacity" 60
 		"engine capacity" 80
 		weapon
@@ -846,7 +846,7 @@ ship "Combat Drone"
 		"mass" 20
 		"drag" .59
 		"heat dissipation" .9
-		"outfit space" 58
+		"outfit space" 22
 		"weapon capacity" 8
 		"engine capacity" 28
 		"automaton" 1
@@ -886,7 +886,7 @@ ship "Corvette"
 		"heat dissipation" .7
 		"fuel capacity" 500
 		"cargo space" 40
-		"outfit space" 420
+		"outfit space" 170
 		"weapon capacity" 150
 		"engine capacity" 100
 		weapon
@@ -941,7 +941,7 @@ ship "Cruiser"
 		"heat dissipation" .45
 		"fuel capacity" 600
 		"cargo space" 60
-		"outfit space" 760
+		"outfit space" 270
 		"weapon capacity" 320
 		"engine capacity" 170
 		weapon
@@ -1004,7 +1004,7 @@ ship "Dagger"
 		"mass" 20
 		"drag" .63
 		"heat dissipation" .9
-		"outfit space" 90
+		"outfit space" 40
 		"weapon capacity" 20
 		"engine capacity" 30
 		weapon
@@ -1045,7 +1045,7 @@ ship "Dreadnought"
 		"heat dissipation" .65
 		"fuel capacity" 600
 		"cargo space" 100
-		"outfit space" 790
+		"outfit space" 240
 		"weapon capacity" 360
 		"engine capacity" 190
 		weapon
@@ -1104,7 +1104,7 @@ ship "Falcon"
 		"heat dissipation" .7
 		"fuel capacity" 600
 		"cargo space" 90
-		"outfit space" 540
+		"outfit space" 150
 		"weapon capacity" 240
 		"engine capacity" 150
 		weapon
@@ -1160,7 +1160,7 @@ ship "Finch"
 		"mass" 40
 		"drag" .83
 		"heat dissipation" .85
-		"outfit space" 110
+		"outfit space" 32
 		"weapon capacity" 20
 		"engine capacity" 40
 		weapon
@@ -1202,7 +1202,7 @@ ship "Firebird"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 400
+		"outfit space" 140
 		"weapon capacity" 160
 		"engine capacity" 100
 		weapon
@@ -1254,7 +1254,7 @@ ship "Flivver"
 		"heat dissipation" .9
 		"fuel capacity" 500
 		"cargo space" 5
-		"outfit space" 130
+		"outfit space" 60
 		"weapon capacity" 25
 		"engine capacity" 45
 		weapon
@@ -1298,7 +1298,7 @@ ship "Freighter"
 		"heat dissipation" .6
 		"fuel capacity" 600
 		"cargo space" 0
-		"outfit space" 250
+		"outfit space" 100
 		"weapon capacity" 80
 		"engine capacity" 70
 		minibays 8
@@ -1351,7 +1351,7 @@ ship "Frigate"
 		"heat dissipation" .7
 		"fuel capacity" 500
 		"cargo space" 35
-		"outfit space" 410
+		"outfit space" 140
 		"weapon capacity" 170
 		"engine capacity" 100
 		weapon
@@ -1406,7 +1406,7 @@ ship "Fury"
 		"heat dissipation" .9
 		"fuel capacity" 600
 		"cargo space" 15
-		"outfit space" 160
+		"outfit space" 60
 		"weapon capacity" 40
 		"engine capacity" 60
 		weapon
@@ -1453,7 +1453,7 @@ ship "Gunboat"
 		"heat dissipation" .8
 		"fuel capacity" 600
 		"cargo space" 50
-		"outfit space" 270
+		"outfit space" 60
 		"weapon capacity" 100
 		"engine capacity" 90
 		weapon
@@ -1502,7 +1502,7 @@ ship "Hauler"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 0
-		"outfit space" 350
+		"outfit space" 180
 		"weapon capacity" 140
 		"engine capacity" 80
 		bays 1
@@ -1557,7 +1557,7 @@ ship "Hauler II"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 0
-		"outfit space" 350
+		"outfit space" 180
 		"weapon capacity" 140
 		"engine capacity" 80
 		bays 2
@@ -1612,7 +1612,7 @@ ship "Hauler III"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 0
-		"outfit space" 350
+		"outfit space" 180
 		"weapon capacity" 140
 		"engine capacity" 80
 		bays 3
@@ -1667,7 +1667,7 @@ ship "Hawk"
 		"heat dissipation" .8
 		"fuel capacity" 300
 		"cargo space" 30
-		"outfit space" 200
+		"outfit space" 90
 		"weapon capacity" 40
 		"engine capacity" 70
 		weapon
@@ -1711,7 +1711,7 @@ ship "Headhunter"
 		"heat dissipation" .8
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 250
+		"outfit space" 90
 		"weapon capacity" 60
 		"engine capacity" 80
 		weapon
@@ -1758,7 +1758,7 @@ ship "Heavy Shuttle"
 		"heat dissipation" .8
 		"fuel capacity" 500
 		"cargo space" 0
-		"outfit space" 120
+		"outfit space" 50
 		"weapon capacity" 10
 		"engine capacity" 60
 		minibays 1
@@ -1799,7 +1799,7 @@ ship "Lance"
 		"mass" 30
 		"drag" .7
 		"heat dissipation" .8
-		"outfit space" 100
+		"outfit space" 50
 		"weapon capacity" 20
 		"engine capacity" 30
 		weapon
@@ -1841,7 +1841,7 @@ ship "Leviathan"
 		"heat dissipation" .5
 		"fuel capacity" 500
 		"cargo space" 80
-		"outfit space" 620
+		"outfit space" 260
 		"weapon capacity" 240
 		"engine capacity" 120
 		weapon
@@ -1895,7 +1895,7 @@ ship "Manta"
 		"heat dissipation" .8
 		"fuel capacity" 400
 		"cargo space" 20
-		"outfit space" 350
+		"outfit space" 110
 		"weapon capacity" 140
 		"engine capacity" 100
 		weapon
@@ -1947,7 +1947,7 @@ ship "Modified Argosy"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 60
-		"outfit space" 340
+		"outfit space" 120
 		"weapon capacity" 140
 		"engine capacity" 80
 		weapon
@@ -1999,7 +1999,7 @@ ship "Mule"
 		"heat dissipation" .5
 		"fuel capacity" 600
 		"cargo space" 0
-		"outfit space" 450
+		"outfit space" 130
 		"weapon capacity" 210
 		"engine capacity" 110
 		bays 3
@@ -2056,7 +2056,7 @@ ship "Nest"
 		"heat dissipation" .67
 		"fuel capacity" 500
 		"cargo space" 40
-		"outfit space" 400
+		"outfit space" 180
 		"weapon capacity" 140
 		"engine capacity" 80
 		weapon
@@ -2112,7 +2112,7 @@ ship "Osprey"
 		"heat dissipation" .8
 		"fuel capacity" 600
 		"cargo space" 40
-		"outfit space" 450
+		"outfit space" 140
 		"weapon capacity" 180
 		"engine capacity" 130
 		weapon
@@ -2165,7 +2165,7 @@ ship "Protector"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 570
+		"outfit space" 240
 		"weapon capacity" 220
 		"engine capacity" 100
 		weapon
@@ -2221,7 +2221,7 @@ ship "Quicksilver"
 		"heat dissipation" .8
 		"fuel capacity" 400
 		"cargo space" 10
-		"outfit space" 240
+		"outfit space" 110
 		"weapon capacity" 60
 		"engine capacity" 70
 		weapon
@@ -2268,7 +2268,7 @@ ship "Rainmaker"
 		"heat dissipation" .6
 		"fuel capacity" 500
 		"cargo space" 25
-		"outfit space" 230
+		"outfit space" 110
 		"weapon capacity" 60
 		"engine capacity" 50
 		weapon
@@ -2319,7 +2319,7 @@ ship "Raven"
 		"heat dissipation" .8
 		"fuel capacity" 500
 		"cargo space" 30
-		"outfit space" 280
+		"outfit space" 90
 		"weapon capacity" 90
 		"engine capacity" 100
 		weapon
@@ -2367,7 +2367,7 @@ ship "Roost"
 		"heat dissipation" .67
 		"fuel capacity" 600
 		"cargo space" 80
-		"outfit space" 450
+		"outfit space" 230
 		"weapon capacity" 140
 		"engine capacity" 80
 		weapon
@@ -2425,7 +2425,7 @@ ship "Scout"
 		"heat dissipation" .7
 		"fuel capacity" 800
 		"cargo space" 55
-		"outfit space" 220
+		"outfit space" 80
 		"weapon capacity" 40
 		"engine capacity" 100
 		weapon
@@ -2477,7 +2477,7 @@ ship "Shuttle"
 		"heat dissipation" .8
 		"fuel capacity" 400
 		"cargo space" 0
-		"outfit space" 120
+		"outfit space" 24
 		"weapon capacity" 10
 		"engine capacity" 60
 		"minibays" 1
@@ -2522,7 +2522,7 @@ ship "Skein"
 		"heat dissipation" .71
 		"fuel capacity" 700
 		"cargo space" 120
-		"outfit space" 500
+		"outfit space" 280
 		"weapon capacity" 140
 		"engine capacity" 80
 		weapon
@@ -2582,7 +2582,7 @@ ship "Sparrow"
 		"heat dissipation" .8
 		"fuel capacity" 300
 		"cargo space" 15
-		"outfit space" 130
+		"outfit space" 42
 		"weapon capacity" 20
 		"engine capacity" 40
 		weapon
@@ -2626,7 +2626,7 @@ ship "Splinter"
 		"heat dissipation" .7
 		"fuel capacity" 600
 		"cargo space" 75
-		"outfit space" 400
+		"outfit space" 150
 		"weapon capacity" 150
 		"engine capacity" 100
 		weapon
@@ -2678,7 +2678,7 @@ ship "Star Barge"
 		"heat dissipation" .8
 		"fuel capacity" 300
 		"cargo space" 0
-		"outfit space" 130
+		"outfit space" 40
 		"weapon capacity" 20
 		"engine capacity" 40
 		"minibays" 2
@@ -2721,7 +2721,7 @@ ship "Star Queen"
 		"heat dissipation" .65
 		"fuel capacity" 500
 		"cargo space" 60
-		"outfit space" 360
+		"outfit space" 140
 		"weapon capacity" 120
 		"engine capacity" 100
 		weapon
@@ -2770,7 +2770,7 @@ ship "Surveillance Drone"
 		"mass" 15
 		"drag" .53
 		"heat dissipation" .9
-		"outfit space" 53
+		"outfit space" 25
 		"weapon capacity" 0
 		"engine capacity" 28
 		"automaton" 1
@@ -2807,7 +2807,7 @@ ship "Vanguard"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 560
+		"outfit space" 240
 		"weapon capacity" 220
 		"engine capacity" 120
 		weapon
@@ -2861,7 +2861,7 @@ ship "Wasp"
 		"heat dissipation" .8
 		"fuel capacity" 400
 		"cargo space" 10
-		"outfit space" 150
+		"outfit space" 62
 		"weapon capacity" 28
 		"engine capacity" 60
 		weapon
